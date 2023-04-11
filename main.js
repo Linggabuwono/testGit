@@ -1,57 +1,53 @@
-// document.title = 'Lulus tes'
-// const body = document.body
-// body.append('Hello World')
+document.title = "Bisa Javascript DOM"
+console.log(document.title)
 
-// const h1 = document.createElement('h1')
+const body = document.body
+body.append('Bismillah besok PASTI DITERIMA')
 
-// h1.textContent = 'Ini menggunakan createElement'
+const h3Coba = document.createElement('h3')
+h3Coba.textContent = "Bismillah"
+console.log (h3Coba.textContent)
 
-// const elementLain = document.createElement('p')
-// elementLain.innerHTML = 'Ini menggunakan innerHTML' 
+const cobaLagi = document.createElement('h3')
+cobaLagi.innerHTML = "Bisa"
 
-// const elementLainLagi = document.createElement('p')
-// elementLainLagi.innerText = 'Ini menggunakan innerText'
+const cobaLagiTerakhir = document.createElement('h3')
+cobaLagiTerakhir.innerText = "Alhamdulillah"
 
-// body.append(h1)
-// body.append(elementLain)
-// body.append(elementLainLagi)
+body.append(h3Coba)
+body.append(cobaLagi)
+body.append(cobaLagiTerakhir)
 
-// const btn1 = document.getElementById('btn1')
-// const btn2 = document.querySelector('.btn2')
+const btn1 = document.getElementById('btn1')
 
-// const defaultText = 'Button 1'
-// btn1.textContent = defaultText
+const btn2 = document.querySelector('.btn2')
 
+function clickfunction() {
+    btn1.style.backgroundColor = 'Yellow'
+}
 
-// btn1.style.backgroundColor = 'green'
-// btn1.style.padding = '5px'
-// btn1.style.borderRadius = '5px'
+function clickfunction2() {
+    btn2.style.backgroundColor = 'Yellow'
+}
 
+function overfunction() {
+    btn1.textContent = "Tulisan Berubah"
+}
 
+const ori = "Ini oritext"
+btn2.textContent = ori
 
-// function gantiWarna() {
-//     btn1.style.backgroundColor = 'yellow'
-// }
-// function warnaAsli() {
-//     btn1.style.backgroundColor = 'green'
-// }
-// function rubahText() {
-//     btn1.textContent = 'berhasil'
-// }
-// function oriText() {
-//     btn1.textContent = defaultText
-// }
-
-console.log('oke')
-
-const endpoint = 'https://reqres.in/api/users/1'
-
-// Push Data
-
+function overfunction2() {
+    btn2.textContent = "Cetak tulisan dibawah"
+    const newtext = document.createElement('p')
+    newtext.textContent = "Tulisan berhasil dicetak"
+    body.append(newtext)
+}
+function outfunction() {
+    btn2.textContent = ori
+}
 
 
-// Get Data
-fetch(endpoint)
-.then((result) => result.json())
-.then(({data}) => console.log(data))
-
+btn1.style.padding = '10px'
+btn1.style.backgroundColor = 'Aqua'
+btn1.style.borderRadius = '7px'
